@@ -1,0 +1,12 @@
+.dropdown-content{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+em{
+    font-weight: bold;
+    font-style: normal;
+}
