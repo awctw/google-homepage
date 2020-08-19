@@ -1,12 +1,157 @@
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+body{
+    font-family: arial,sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px 15px 0px;
+}
+
+.googleIcon img{
+    height: 30px;
+    width: 92px;
+    padding: 4px 28px 0px 30px;
+    cursor: pointer;
+}
+
+header .search{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+    right: -250%;
+    top: -34px;
+}
+
+header .microphone{
+    height: 22px;
+    width: 15px;
+    position: relative;
+    cursor: pointer;
+    right: -245%;
+    top: -32.5px;
+}
+
+header .clear{
+    height: 17px;
+    width: 13px;
+    position: relative;
+    cursor: pointer;
+    right: -245%;
+    top: -34.5px;
+}
+
+header .verticalLine{
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0 10px;
+    height: 25px;
+    right: -245%;
+    top: -30.5px;
+}
+
+input[type=text]{
+    border-radius: 75px;
+    line-height:34px;
+    font-size: 16px;
+    padding-left: 17px;
+    border: 1px solid #CCC;
+    width: 285%;
+}
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.links{
+    position: relative;
+    margin: 10px;
+    color: #5f6368;
+    font-size: 13px;
+    right: -33%;
+    top: -35px;
+}
+
+.right{
+    position: relative;
+    margin: 10px;
+    color: #5f6368;
+    font-size: 13px;
+    right: -62%;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    color: #5f6368;
+    font-size: 13px;
+    right: -32%;
+    top: -35.75px;
+    font-size: 13px;
+}
+
+
 .dropdown-content{
     display: none;
+    position: absolute;
+    min-width: 70px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    padding: 5px 0px 5px;
+    margin: 0px;
+    display: block;
+    text-align: center;
+    position: relative;
+    left: -0.1px;
+    top: 1px;
+}
+
+.dropdown-content a:hover{
+    background-color: #d3d3d3;
 }
 
 .show{
     display: block;
+    position: absolute;
+    right: -18px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    background-color: #FFFFFF;
 }
 
-em{
-    font-weight: bold;
-    font-style: normal;
+button{
+    outline-style: none !important;
+    outline-width: 0 !important;
+    background-color: #FFFFFF;
+    border: none;
+    color: #5f6368;
+    cursor: pointer;
+}
+
+hr{
+    color: #dddcdc;
+    opacity: 0.2;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
 }
