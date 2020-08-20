@@ -21,17 +21,6 @@
                     }
                 }
             }
-
-            var buttonRight = document.getElementById('scrollRight');
-            var buttonLeft = document.getElementById('scrollLeft');
-
-            buttonRight.onclick = function(){
-                document.getElementById('scroll').scrollLeft += 20;
-            };
-
-            buttonLeft.onclick = function(){
-                document.getElementById('scroll').scrollLeft += -20;
-            };
         </script>
     </head>
 
@@ -114,17 +103,29 @@
 
         <h3>Videos</h3>
 
-        <div>
-            <div>
+        <div id="videoContainer">
+            <div id="videoThumbnail">
                 <a href="https://www.youtube.com/watch?v=YWA-xbsJrVg">
-                <h4>How to Make a Website in 10 mins - Simple &amp; Easy</h4>
-            </a>
+                    <img class="video-thumbnail" src="https://i.ytimg.com/vi/YWA-xbsJrVg/hqdefault.jpg" alt="video thumbnail">
+                    <h4>How to Make a Website in 10 mins - Simple &amp; Easy</h4>
+                </a>
+
+                <div>Website Learners
+                    <br>
+                    YouTube - Jan 3, 2018
+                </div>
              </div>
 
-            <div>
+            <div id="videoThumbnail">
                 <a href="https://www.youtube.com/watch?v=l3mUE6qj2Qg">
-                <h4>How To Build a Website Without Code | Everyone Can Build a ...</h4>
+                    <img class="video-thumbnail" src="https://i.ytimg.com/vi/l3mUE6qj2Qg/hqdefault.jpg" alt="video thumbnail">
+                    <h4>How To Build a Website Without Code | Everyone Can Build a ...</h4>
                 </a>
+                <div>
+                    Roberto Blake
+                    <br>
+                    YouTube - Nov 8, 2016
+                </div>
             </div>
         </div>
 
@@ -182,7 +183,9 @@
         </p>
     </div>
 
+    <a href="https://www.google.com/search?source=univ&tbm=isch&q=build+this+webpage&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQsAR6BAgIEAE">
     <h3>Images for build this webpage</h3>
+    </a>
 
     <div id="scrollSuggestions">
         <div id="scrollContentSuggestions">
@@ -211,57 +214,83 @@
 
     <div id="scroll">
         <div id="content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDrUAaLvbm54XY2YSW9noZbnWyFPxR9MSot8fGg9EG&s">       
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=tYPjG1pBS6JGeM%252CwpuDOV3KZSV4TM%252C_&vet=1&usg=AI4_-kQ4UaiZEpIfEHFJv7NiU8TYcj5q8A&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwEnoECAgQHg#imgrc=tYPjG1pBS6JGeM">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDrUAaLvbm54XY2YSW9noZbnWyFPxR9MSot8fGg9EG&s">
+            </a>  
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=EnLlgp1dkA77oM%252CGu5uPx0TbQsFyM%252C_&vet=1&usg=AI4_-kRGmANhND0BKeSweHf2DnDR1n3fuA&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwE3oECAgQIA#imgrc=EnLlgp1dkA77oM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-RJWRqpkpy7wBjc-2YAmLbTPzTdfKArfY-v2JvvbUQ&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=ci0W_TSRZ8s2iM%252CwpuDOV3KZSV4TM%252C_&vet=1&usg=AI4_-kSZXibOKfouv7dbagSWfh44wjovBQ&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwFHoECAgQIg#imgrc=ci0W_TSRZ8s2iM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoP9jMFfd4rDvYerkh6EHxtUPVkutns9_UM8FDB0v-6g&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=jKmlTjbdffRjzM%252CwpuDOV3KZSV4TM%252C_&vet=1&usg=AI4_-kT8IX0Y0h0DcdROJP7-6K05m99nOw&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwFXoECAgQJA#imgrc=jKmlTjbdffRjzM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuKWBGADlebb1sNcYZojylv6WWeu_FVcqaTYToeiZZPg&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=cn91pM7seMiw_M%252C-uIPrGmY5B95yM%252C_&vet=1&usg=AI4_-kTNeYzJ_ml9kGyAwAmQQ9762QLTrQ&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwFnoECAgQJg#imgrc=cn91pM7seMiw_M">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfF0SPHIPH9hy35Jav5wMRZGRvExpjm9C9nnzOI0yBQ&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=Csd9PES5BQo3SM%252CBPgQtV9GryPlKM%252C_&vet=1&usg=AI4_-kSaRL3Dpe1mBmP_WIxlGKpeORO79w&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwF3oECAgQKA#imgrc=Csd9PES5BQo3SM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUBTbQRpFCD9fWI96j-0ukP-dw2oNPLKuxYphJcVWPhA&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=z35XjoC6heqcoM%252CwpuDOV3KZSV4TM%252C_&vet=1&usg=AI4_-kQ00-pY4DW_7t5n7irv82hItL_fAQ&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwGHoECAgQKg#imgrc=z35XjoC6heqcoM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZFCEq7x8XOnvUWBTJumYl8pYhe1kucFzk8eNrxgD7A&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=BQZLtd70j1QeEM%252C06_B95pqRMrN-M%252C_&vet=1&usg=AI4_-kS7X21oTD8d9UVIgVF76SRdvIuWNA&sa=X&ved=2ahUKEwjTrJnh66jrAhUTPH0KHY1VBcMQ9QEwGXoECAgQLA#imgrc=BQZLtd70j1QeEM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJsRE3zUX-5RIoJydK6YexXP8EjaqgcmIymKbFiILG6Q&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=BQZLtd70j1QeEM%252C06_B95pqRMrN-M%252C_&vet=1&usg=AI4_-kS7X21oTD8d9UVIgVF76SRdvIuWNA&sa=X&ved=2ahUKEwjTp-mz8KjrAhXjFjQIHb1lB4gQ9QEwGnoECAkQLg#imgrc=BQZLtd70j1QeEM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlEVkNWdbjKv41cK35L9pBcbma7-nScbaKKPNowELWw&s">
+            </a> 
+
+            <a href="https://www.google.com/search?q=build+this+webpage&tbm=isch&source=iu&ictx=1&fir=uT95qZicMiZrLM%252C73_8L7qtYWjJlM%252C_&vet=1&usg=AI4_-kS8yhAXyotzQHFeTqWB_CPWt3XfWQ&sa=X&ved=2ahUKEwjTp-mz8KjrAhXjFjQIHb1lB4gQ9QEwG3oECAkQMA#imgrc=uT95qZicMiZrLM">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3KypE73oT5Jh5gM91VbxkEfn3t0gLItTOH8mJJqOeoA&s">
+            </a> 
         </div>
     </div>
 
-    <div>
-        <a href="https://www.google.com/search?source=univ&tbm=isch&q=build+this+webpage&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ7Al6BAgJEDI">
+    <div class="report">
+        <a class="moreImages" href="https://www.google.com/search?source=univ&tbm=isch&q=build+this+webpage&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ7Al6BAgJEDI">
+            <img class="arrow" src="https://png2.cleanpng.com/sh/958485d1dee0b210e5066672dac327ac/L0KzQYm3VMA4N5lAfZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfFzepD8RdV1aYCwccP7TgJqb5l5RdN7cnB6PYbog8k4QGFpUNhtN0G3Pom7VcE2PGI2Sac7M0G4Qoq3WcU5QWMziNDw/kisspng-computer-icons-arrow-clip-art-right-arrow-5ac9780d8fd714.8451541115231529095892.png">
             <h4>More images for build this webpage</h4>
+            <a class="reportImages" href="https://www.google.com/search?q=build+this+webpage#">Report images</a>
         </a>
     </div>
 
-    <div>
-        <a href="https://www.google.com/search?q=build+this+webpage#">Report images</a>
-    </div>
-
-
-    <button id="scrollLeft" type="button">Left</button>
-    <button id="scrollRight" type="button">Right</button>
-
     <h3>Searches related to build this webpage</h3>
 
-    <nav>
+<div class="row">
+    <nav class="column">
         <a href="https://www.google.com/search?q=how+to+build+a+website+from+scratch&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoAHoECAwQAQ">how to build a website from scratch</a>
         <a href="https://www.google.com/search?q=how+to+build+a+website+from+scratch+html&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoAXoECAwQAg">how to build a website from scratch html</a>
         <a href="https://www.google.com/search?q=build+a+website+for+free&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoAnoECAwQAw">build a website for free</a>
         <a href="https://www.google.com/search?q=the+odin+project&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoA3oECAwQBA">the odin project</a>
+    </nav>
+    <nav class="column">   
         <a href="https://www.google.com/search?q=build+a+website+in+a+day&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoBHoECAwQBQ">build a website in a day</a>
         <a href="https://www.google.com/search?q=create+a+website&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoBXoECAwQBg">create a website</a>
         <a href="https://www.google.com/search?q=how+to+create+a+website+on+google&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoBnoECAwQBw">how to create a website on google</a>
         <a href="https://www.google.com/search?q=project+on+website+development&sa=X&ved=2ahUKEwjWlYzFvqbrAhWYGDQIHVToCqIQ1QIoB3oECAwQCA">project on website development</a>
-    </nav>
+    </nav> 
+</div>
 
 </div>
 
-
         <footer>
-            <a href="https://support.google.com/websearch/?visit_id=637333280784218559-4048511427&hl=en-CA&rd=2#topic=3378866">Help</a>
+            <div>
+            <a id="left-margin" href="https://support.google.com/websearch/?visit_id=637333280784218559-4048511427&hl=en-CA&rd=2#topic=3378866">Help</a>
             <a href="https://www.google.com/search?q=build+this+webpage#">Send Feedback</a>
             <a href="https://policies.google.com/privacy?hl=en-CA&fg=1">Privacy</a>
-            <a href="https://policies.google.com/terms?hl=en-CA&fg=1">Terms</a>
-       
+            <a href="https://policies.google.com/terms?hl=en-CA&fg=1">Terms</a>      
+            </div>
         </footer>
-
        
     </body>
 </html>
